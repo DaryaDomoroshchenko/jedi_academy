@@ -1,0 +1,8 @@
+.digits__item {
+/*   margin-right: 60px; */
+  position: relative;
+}
+
+.digits__item:last-of-type {
+  margin-right: 0;
+}

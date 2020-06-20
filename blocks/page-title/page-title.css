@@ -1,0 +1,16 @@
+.page-title {
+  font-family: 'Lato', Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: .05em;
+  font-size: 24px;
+  text-align: center;
+  color: #05E7E6;
+  margin: 0 0 28px;
+}
+
+@media screen and (max-width: 767px) {
+  .page-title {
+    margin: 0 0 20px;
+    font-size: 18px;
+  }
+}

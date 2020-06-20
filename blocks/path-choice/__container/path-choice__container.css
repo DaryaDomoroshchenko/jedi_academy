@@ -1,0 +1,13 @@
+.path-choice__container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .path-choice__container {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}

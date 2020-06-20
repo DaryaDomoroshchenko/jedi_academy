@@ -1,0 +1,14 @@
+.impressions__blockquote {
+  color: #FFF;
+  margin: 0;
+  padding: 20px 0 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 767px) {
+  .impressions__blockquote {
+    max-width: 280px;
+    padding: 0;
+  }
+}
