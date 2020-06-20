@@ -12,8 +12,9 @@
   position: absolute;
   bottom: -27.5px;
   left: 50%;
+  cursor: pointer;
   transform: translateX(-50%);
-  transition: box-shadow .3s ease-out;
+  transition: box-shadow .3s ease-out, background-color .3s ease-out;
 }
 
 .about-us__button:hover {
@@ -24,10 +25,11 @@
 }
 
 .about-us__button:active {
-  background-color: #E53663;
+  /* background-color: #E53663; */
+  background-color: transparent;
   border: solid 2px #E53663;
   color: #FFF;
-  box-shadow: 0 0 8px #E53663;
+  box-shadow: 0 0 20px #E53663;
 }
 
 @media screen and (max-width: 767px) {

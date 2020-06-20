@@ -3,6 +3,7 @@
   height: 133px;
   border-radius: 75px;
   margin-right: 32px;
+  cursor: pointer;
   transition: transform .6s ease-in-out;
   box-shadow: 0 0 12px beige;
 }

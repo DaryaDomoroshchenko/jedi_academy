@@ -2,7 +2,7 @@
   background-color: #E53663;
   border: none;
   color: #FFF;
-  transition: box-shadow .3s ease-out;
+  transition: box-shadow .3s ease-out, background-color .3s ease-out;
 }
 
 .path-choice__button_side_dark:hover {
@@ -13,10 +13,11 @@
 }
 
 .path-choice__button_side_dark:active {
-  background-color: #E53663;
+  /* background-color: #E53663; */
+  background-color: transparent;
   border: solid 2px #E53663;
   color: #FFF;
-  box-shadow: 0 0 8px #E53663;
+  box-shadow: 0 0 20px #E53663;
 }
 
 @media screen and (max-width: 767px) {

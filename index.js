@@ -1,9 +1,12 @@
-/* $(() => {
+$(() => {
 
-  $('.intro__button').on('click', function(e){
-    $('html,body').stop().animate({ scrollTop: $('#some_point').offset().top }, 1000);
-    e.preventDefault();
+  $('.intro__link').click(function(event) {
+    const clicked_element_id = $(this).attr('href');
+    const destination = $(clicked_element_id).offset().top;
+    $('html, body').animate({scrollTop: destination}, 1000);
+
+    return false;
   });
 
 });
- */
+
