@@ -10,6 +10,7 @@
 .intro__scroll-arrow {
   width: 100px;
   height: 100px;
+  filter: contrast(400%);
   animation: pulse 1s ease-in infinite alternate;
 }
 

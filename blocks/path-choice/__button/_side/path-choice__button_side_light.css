@@ -2,7 +2,7 @@
   background-color: transparent;
   border: solid 2px #05E7E6;
   color: #05E7E6;
-  transition: box-shadow .3s ease-out;
+  transition: box-shadow .3s ease-out, color .3s ease-out;
 }
 
 .path-choice__button_side_light:hover {
@@ -16,7 +16,7 @@
   background-color: #FFF;
   border: solid 2px #FFF;
   color: #000;
-  box-shadow: 0 0 8px beige;
+  box-shadow: 0 0 20px beige;
 }
 
 @media screen and (max-width: 767px) {
