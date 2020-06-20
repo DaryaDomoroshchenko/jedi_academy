@@ -1,0 +1,10 @@
+.impressions__item {
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .impressions__item {
+    flex-direction: column;
+    align-items: center;
+  }
+}

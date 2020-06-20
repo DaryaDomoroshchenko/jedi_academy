@@ -1,0 +1,18 @@
+@import url(../lead/lead.css);
+@import url(../navigation/navigation.css);
+@import url(../intro/intro.css);
+@import url(../additional/additional.css);
+@import url(../about-us/about-us.css);
+@import url(../digits/digits.css);
+@import url(../impressions/impressions.css);
+@import url(../path-choice/path-choice.css);
+@import url(../page-container/page-container.css);
+@import url(../page-title/page-title.css);
+@import url(../page-caption/page-caption.css);
+@import url(../top-bottom-paddings/top-bottom-paddings.css);
+
+.page {
+  background-image: url(../../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

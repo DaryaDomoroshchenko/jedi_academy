@@ -1,0 +1,11 @@
+.navigation__icon {
+  width: 27px;
+  height: 21px;
+  filter: brightness(0) invert(100%);
+  transition: transform .5s ease;
+}
+
+.navigation__icon:hover {
+  filter: none;
+  transform: scale(1, 0.8);
+}

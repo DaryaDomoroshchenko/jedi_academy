@@ -1,0 +1,11 @@
+@import url(./__container/about-us__container.css);
+@import url(./__title/about-us__title.css);
+@import url(./__caption/about-us__caption.css);
+@import url(./__text/about-us__text.css);
+@import url(./__button/about-us__button.css);
+
+section.about-us {
+  font-family: 'Lato', Arial, sans-serif;
+  min-height: 350px;
+  margin-bottom: 30px;
+}

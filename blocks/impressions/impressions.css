@@ -1,0 +1,13 @@
+@import url(./__title/impressions__title.css);
+@import url(./__caption/impressions__caption.css);
+@import url(./__container/impressions__container.css);
+@import url(./__item/impressions__item.css);
+@import url(./__image/impressions__image.css);
+@import url(./__blockquote/impressions__blockquote.css);
+@import url(./__text/impressions__text.css);
+@import url(./__author/impressions__author.css);
+@import url(./__name/impressions__name.css);
+
+.impressions {
+  font-family: 'Lato', Arial, sans-serif;
+}
