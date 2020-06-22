@@ -1,0 +1,94 @@
+.path-choice {
+  font-family: $base-font-family;
+
+  &__title {
+    @include h2-title();
+  }
+
+  &__caption {
+    @include p-caption();
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+
+    @media (max-width: $screen-m) {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__button {
+    @include button(265px, 60px);
+    padding: 0;
+    margin-right: 50px;
+
+    @media (max-width: $screen-m) {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+
+      @media (max-width: $screen-m) {
+        margin-bottom: 0;
+      }
+    }
+
+    &_side_light {
+      @include button-colors(transparent, $color-blue, solid 2px $color-blue);
+
+      &:hover {
+        @include button-hover($color-white, $color-white);
+      }
+
+      &:active {
+        @include button-active(
+          $color-white,
+          $color-black,
+          $color-white,
+          0 0 20px $color-white
+        );
+
+        @media (max-width: $screen-m) {
+          @include button-active(
+            $color-transp,
+            $color-white,
+            $color-white,
+            0 0 8px $color-white
+          );
+        }
+      }
+    }
+
+    &_side_dark {
+      @include button-colors($color-pink, $color-white, none);
+
+      &:hover {
+        @include button-hover($color-pink, $color-pink);
+      }
+
+      &:active {
+        @include button-active(
+          $color-transp,
+          $color-white,
+          $color-pink,
+          0 0 20px $color-pink
+        );
+
+        @media (max-width: $screen-m) {
+          @include button-active(
+            $color-transp,
+            $color-white,
+            $color-pink,
+            0 0 8px $color-pink
+          );
+        }
+      }
+    }
+  }
+}

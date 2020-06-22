@@ -1,0 +1,93 @@
+.digits {
+  font-family: $base-font-family;
+
+  &__title {
+    @include h2-title();
+  }
+
+  &__caption {
+    @include p-caption();
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-gap: 60px 60px;
+    justify-content: center;
+
+    @media (max-width: $screen-m) {
+      grid-template-columns: 230px;
+      grid-row-gap: 40px;
+    }
+
+    @media (max-width: $screen-s) {
+      grid-template-columns: 220px;
+      grid-row-gap: 40px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    cursor: pointer;
+    transition: transform .6s ease;
+
+    &:hover {
+      @media (min-width: $screen-m) {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  &__image {
+    @keyframes rotation {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(1080deg);
+      }
+    }
+
+    width: 250px;
+    height: 250px;
+    transition: transform .6s;
+    animation: rotation 50s linear infinite forwards;
+
+    @media (max-width: $screen-m) {
+      width: 230px;
+      height: 230px;
+    }
+
+    @media (max-width: $screen-s) {
+      width: 220px;
+      height: 220px;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__amount {
+    font-family: $base-font-family;
+    font-weight: 600;
+    letter-spacing: .05em;
+    font-size: 26px;
+    color: $color-pink;
+    margin-bottom: 10px;
+  }
+
+  &__mark {
+    font-family: $base-font-family;
+    font-weight: 400;
+    letter-spacing: .05em;
+    font-size: 14px;
+    color: $color-white;
+  }
+}

@@ -1,0 +1,43 @@
+/* .about-us__button {
+  width: 207px;
+  height: 55px;
+  font-family: 'Lato', Arial, sans-serif;
+  border-radius: 30px;
+  letter-spacing: .1em;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 14px;
+
+  border: none;
+  color: #FFF;
+  background-color: #E53663;
+
+  position: absolute;
+  bottom: -27.5px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: box-shadow .3s ease-out, background-color .3s ease-out;
+}
+
+.about-us__button:hover {
+  background-color: transparent;
+  border: solid 2px #E53663;
+  color: #FFF;
+  box-shadow: 0 0 8px #E53663;
+}
+
+.about-us__button:active {
+  background-color: transparent;
+  border: solid 2px #E53663;
+  color: #FFF;
+  box-shadow: 0 0 20px #E53663;
+}
+
+@media screen and (max-width: 767px) {
+  .about-us__button:active {
+    background-color: transparent;
+    border: solid 2px #E53663;
+    color: #FFF;
+    box-shadow: 0 0 8px #E53663;
+  }
+} */

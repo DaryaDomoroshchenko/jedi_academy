@@ -1,0 +1,77 @@
+@mixin h2-title() {
+  font-family: $base-font-family;
+  font-weight: 600;
+  letter-spacing: .05em;
+  font-size: 24px;
+  text-align: center;
+  color: $color-blue;
+  margin: 0 0 28px;
+
+  @media (max-width: $screen-s) {
+    margin: 0 0 20px;
+    font-size: 18px;
+  }
+}
+
+@mixin p-caption() {
+  font-family: $base-font-family;
+  font-weight: 400;
+  letter-spacing: .05em;
+  font-size: 18px;
+  font-style: italic;
+  text-align: center;
+  color: $color-white;
+  margin: 0 0 60px;
+
+  @media (max-width: $screen-s) {
+    margin: 0 0 45px;
+    font-size: 14px;
+  }
+}
+
+@mixin p-text() {
+  font-family: $base-font-family;
+  font-weight: 400;
+  letter-spacing: .05em;
+  line-height: 1.8;
+  font-size: 14px;
+  text-align: center;
+  color: $color-white;
+  margin: 0 0 60px;
+
+  @media (max-width: $screen-s) {
+    font-size: 13px;
+  }
+}
+
+@mixin button($width, $height) {
+  width: $width;
+  height: $height;
+  font-family: $base-font-family;
+  border-radius: 30px;
+  letter-spacing: .1em;
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+@mixin button-colors($bg-color, $color, $border) {
+  background-color: $bg-color;
+  color: $color;
+  border: $border;
+  transition: box-shadow .3s ease-out, background-color .3s ease-out;
+}
+
+@mixin button-hover($border-color, $box-shadow-color) {
+  background-color: $color-transp;
+  color: $color-white;
+  border: solid 2px $border-color;
+  box-shadow: 0 0 8px $box-shadow-color;
+}
+
+@mixin button-active($bg-color, $color, $border-color, $box-shadow) {
+  background-color: $bg-color;
+  color: $color;
+  border: solid 2px $border-color;
+  box-shadow: $box-shadow;
+}

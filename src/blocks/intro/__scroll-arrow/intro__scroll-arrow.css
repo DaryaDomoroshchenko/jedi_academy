@@ -1,0 +1,23 @@
+/* @keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.intro__scroll-arrow {
+  width: 100px;
+  height: 100px;
+  filter: contrast(400%);
+  animation: pulse 1s ease-in infinite alternate;
+}
+
+@media screen and (max-width: 374px) {
+  .intro__scroll-arrow {
+    width: 80px;
+    height: 80px;
+  }
+}
+ */

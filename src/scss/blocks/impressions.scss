@@ -1,0 +1,105 @@
+.impressions {
+  font-family: $base-font-family;
+
+  &__title {
+    @include h2-title();
+  }
+
+  &__caption {
+    @include p-caption();
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 445px);
+    grid-gap: 50px 35px;
+    justify-content: center;
+
+    @media (max-width: $screen-m) {
+      grid-template-columns: repeat(auto-fill, 280px);
+      grid-row-gap: 50px;
+    }
+  }
+
+  &__item {
+    display: flex;
+
+    @media (max-width: $screen-m) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__image {
+    width: 133px;
+    height: 133px;
+    border-radius: 75px;
+    margin-right: 32px;
+    cursor: pointer;
+    transition: transform .6s ease-in-out;
+    box-shadow: 0 0 12px $color-white;
+
+    @media (max-width: $screen-m) {
+      margin: 0 0 32px;
+      width: 120px;
+      height: 120px;
+    }
+
+    &:hover {
+      transform: scale(1.02);
+    }
+
+    &::after {
+      box-shadow: 0 0 15px $color-white;
+      opacity: 0;
+      transition: opacity .6s ease-in-out;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__blockquote {
+    color: $color-white;
+    margin: 0;
+    padding: 20px 0 40px;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: $screen-m) {
+      max-width: 280px;
+      padding: 0;
+    }
+  }
+
+  &__text {
+    font-family: $base-font-family;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: .05em;
+    font-size: 13px;
+    margin: 0 0 20px;
+    color: $color-white;
+
+    @media (max-width: $screen-m) {
+      margin: 0 0 10px;
+    }
+  }
+
+  &__author {
+    font-family: $base-font-family;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: .05em;
+    font-size: 14px;
+    margin: 0;
+    text-transform: uppercase;
+    color: $color-white;
+  }
+
+  &__name {
+    color: $color-blue;
+  }
+}
+

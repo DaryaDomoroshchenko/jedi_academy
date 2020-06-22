@@ -1,0 +1,21 @@
+/* @media screen and (min-width: 1140px) {
+  .top-bottom-paddings {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1139px) {
+  .top-bottom-paddings {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .top-bottom-paddings {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+}
+ */

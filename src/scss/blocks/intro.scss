@@ -1,0 +1,121 @@
+.intro {
+  font-family: $base-font-family;
+  padding: 70px 0 35px;
+  height: calc(100vh - 75px);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: $screen-m) {
+    padding: 70px 0;
+    height: calc(100vh - 55px);
+  }
+
+  @media (max-width: $screen-s) {
+    padding: 70px 0;
+    height: calc(100vh - 45px);
+  }
+
+  &__title {
+    font-family: $base-font-family;
+    font-weight: 500;
+    line-height: 1.3;
+    font-size: 80px;
+    text-transform: uppercase;
+    color: $color-yellow;
+    -webkit-text-fill-color: $color-transp;
+    -webkit-text-stroke: 1.8px $color-yellow;
+    text-align: center;
+    margin: 0 0 40px;
+
+    @media (max-width: $screen-l) {
+      line-height: 1.2;
+      font-size: 65px;
+      margin: 0 0 30px;
+    }
+
+    @media (max-width: $screen-m) {
+      line-height: 1.2;
+      font-size: 46px;
+      margin: 0 0 20px;
+    }
+
+    @media (max-width: $screen-s) {
+      line-height: 1;
+      font-size: 30px;
+      margin: 0 0 10px;
+    }
+  }
+
+  &__caption {
+    font-family: $base-font-family;
+    font-weight: 400;
+    letter-spacing: .05em;
+    font-size: 18px;
+    color: $color-blue;
+    text-align: center;
+    margin: 0;
+
+    @media (max-width: $screen-l) {
+      font-size: 16px;
+      margin: 0 0 80px;
+    }
+
+    @media (max-width: $screen-m) {
+      font-size: 13px;
+      margin: 0 0 70px;
+    }
+
+    @media (max-width: $screen-s) {
+      font-size: 10px;
+      margin: 0 0 55px;
+    }
+  }
+
+  &__wrap {
+    max-width: 600px;
+
+    @media (max-width: $screen-l) {
+      max-width: 500px;
+    }
+
+    @media (max-width: $screen-m) {
+      max-width: 350px;
+    }
+
+    @media (max-width: $screen-s) {
+      max-width: 230px;
+    }
+  }
+
+  &__link {
+    cursor: pointer;
+  }
+
+  &__scroll-arrow {
+    @keyframes pulse {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(1.1);
+      }
+    }
+
+    width: 100px;
+    height: 100px;
+    filter: contrast(400%);
+    animation: pulse 1s ease-in infinite alternate;
+
+    @media (max-width: $screen-m) {
+      width: 90px;
+      height: 90px;
+    }
+
+    @media (max-width: $screen-s) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}

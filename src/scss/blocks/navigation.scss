@@ -1,0 +1,29 @@
+.navigation {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+
+  @media (max-width: $screen-m) {
+    padding-top: 30px;
+  }
+
+  @media (max-width: $screen-s) {
+    padding-top: 20px;
+  }
+
+  &__icon {
+    width: 27px;
+    height: 21px;
+    filter: brightness(0) invert(100%);
+    transition: transform .5s ease;
+
+    &:hover {
+      transform: scale(1, 0.8);
+    }
+
+    &:active {
+      filter: none;
+      transform: scale(1, 0.8);
+    }
+  }
+}

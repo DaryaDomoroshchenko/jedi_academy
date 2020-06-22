@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta name="description" content="Дипломный проект Дарьи Доморощенко на Яндекс.Практикум">
+  <meta name="author" content="Дарья Доморощенко">
+  <meta name="keywords" content="html, css, scss">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="<%=require('./images/darth_vader_favicon.png').default%>">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.index.css %>">
+  <title>Jedi Academy - Main</title>
+
+</head>
+
+<body class="page">
+
+  <section class="lead">
+    <nav class="navigation page-container">
+      <a class="navigation__link" href="#"><img class="navigation__icon" src="<%=require('./images/menu_icon.png').default%>" alt="Menu icon"></a>
+    </nav>
+
+    <section class="intro page-container">
+      <div class="intro__wrap">
+        <h1 class="intro__title">Star Wars Jedi Academy</h1>
+        <p class="intro__caption">A long time ago in a galaxy far away...</p>
+      </div>
+      <a class="intro__link" href="#about"><img class="intro__scroll-arrow" src="<%=require('./images/scroll_down.png').default%>" alt="Arrow"></a>
+
+    </section>
+  </section>
+
+  <section id="about" class="about-us page-container top-bottom-paddings">
+    <div class="about-us__container">
+      <h2 class="about-us__title page-title">introduction from Master Yoda</h2>
+      <p class="about-us__caption page-caption">Ready are you? What know you of ready? </p>
+      <p class="about-us__text"> For eight hundred years have I trained Jedi. My own counsel will I keep on who is to be trained. A Jedi must have the deepest commitment, the most serious mind. This one a long time have I watched. All his life has he looked away… to the future, to the horizon. Never his mind on where he was. Hmm? What he was doing. Hmph. Adventure. Heh. Excitement. Heh. A Jedi craves not these things. You are reckless.</p>
+      <button class="about-us__button">Read more</button>
+    </div>
+  </section>
+
+  <section class="digits page-container top-bottom-paddings">
+    <h2 class="digits__title page-title">Our achievements in numbers</h2>
+    <p class="digits__caption page-caption">Smaller in number are we, but larger in&nbspmind</p>
+    <div class="digits__container">
+      <div class="digits__item">
+        <img class="digits__image" src="<%=require('./images/circle_1.png').default%>" alt="Circle">
+        <div class="digits__wrap">
+          <span class="digits__amount">70</span>
+          <span class="digits__mark">Jedi</span>
+        </div>
+      </div>
+      <div class="digits__item">
+        <img class="digits__image" src="<%=require('./images/circle_2.png').default%>" alt="Circle">
+        <div class="digits__wrap">
+          <span class="digits__amount">400</span>
+          <span class="digits__mark">Droids</span>
+        </div>
+      </div>
+      <div class="digits__item">
+        <img class="digits__image" src="<%=require('./images/circle_3.png').default%>" alt="Circle">
+        <div class="digits__wrap">
+          <span class="digits__amount">250</span>
+          <span class="digits__mark">Battles</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="impressions page-container top-bottom-paddings">
+    <h2 class="impressions__title page-title">Meet our Mentors</h2>
+    <p class="impressions__caption page-caption">Always two there are, no more, no less. A&nbspmaster and an apprentice</p>
+    <div class="impressions__container">
+      <div class="impressions__item">
+        <img class="impressions__image" src="<%=require('./images/Yoda.jpeg').default%>" alt="Master Yoda">
+        <blockquote class="impressions__blockquote">
+          <p class="impressions__text">“Always pass on what you have learned.”</p>
+          <cite class="impressions__author"><span class="impressions__name">Yoda</span>, Jedi Academy</cite>
+        </blockquote>
+      </div>
+      <div class="impressions__item">
+        <img class="impressions__image" src="<%=require('./images/MaceWindu.jpg').default%>" alt="Mace Windu">
+        <blockquote class="impressions__blockquote">
+          <p class="impressions__text">“We’re keepers of the peace, not soldiers.”</p>
+          <cite class="impressions__author"><span class="impressions__name">Mace Windu</span>, Jedi Academy</cite>
+        </blockquote>
+      </div>
+      <div class="impressions__item">
+        <img class="impressions__image" src="<%=require('./images/ObiWan.jpg').default%>" alt="Obi-Wan Kenobi">
+        <blockquote class="impressions__blockquote">
+          <p class="impressions__text">“The force is what gives a Jedi his power. It’s an energy field created by all living things.”</p>
+          <cite class="impressions__author"><span class="impressions__name">Obi-Wan Kenobi</span>, Jedi Academy</cite>
+        </blockquote>
+      </div>
+      <div class="impressions__item">
+        <img class="impressions__image" src="<%=require('./images/Skywalker.jpg').default%>" alt="Anakin Skywalker">
+        <blockquote class="impressions__blockquote">
+          <p class="impressions__text">“Sometimes we must let go of our pride, and do what is requested of us.”</p>
+          <cite class="impressions__author"><span class="impressions__name">A. Skywalker</span>, Jedi Academy</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="path-choice page-container top-bottom-paddings">
+    <h2 class="path-choice__title">Choose Your Path!</h2>
+    <p class="path-choice__caption">And may the Force be with you</p>
+    <div class="path-choice__container">
+      <button class="path-choice__button path-choice__button_side_light">Join the light side</button>
+      <button class="path-choice__button path-choice__button_side_dark">Join the dark side</button>
+    </div>
+  </section>
+
+  <script src="<%= htmlWebpackPlugin.files.chunks.index.entry %>"></script>
+</body>
+</html>

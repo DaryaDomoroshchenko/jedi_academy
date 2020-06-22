@@ -1,0 +1,26 @@
+/* .page-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 1140px) {
+  .page-container {
+    padding-left: 104px;
+    padding-right: 104px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1139px) {
+  .page-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .page-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+} */
