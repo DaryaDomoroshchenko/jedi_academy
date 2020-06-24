@@ -1,0 +1,15 @@
+%section-caption {
+  font-family: $base-font-family;
+  font-size: 18px;
+  font-weight: medium;
+  letter-spacing: .05em;
+  font-style: italic;
+  text-align: center;
+  color: $color-simple-text;
+  margin: 0 0 60px;
+
+  @include media-s {
+    font-size: 14px;
+    margin: 0 0 45px;
+  }
+}

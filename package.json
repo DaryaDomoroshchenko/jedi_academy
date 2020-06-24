@@ -1,7 +1,7 @@
 {
   "name": "jedi_academy",
-  "version": "0.0.1",
-  "description": "Академия Джедаев. Практика работы с препроцессором SCSS и библиотекой jQuery.",
+  "version": "0.0.4",
+  "description": "Академия Джедаев. Практика работы с препроцессором SCSS.",
   "main": "index.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production rimraf dist && webpack --mode production",
@@ -46,6 +46,7 @@
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "core-js": "^3.4.1",
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "normalize.scss": "^0.1.0"
   }
 }

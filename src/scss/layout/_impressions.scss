@@ -1,0 +1,92 @@
+.impressions {
+
+  &__title {
+    @extend %section-title;
+  }
+
+  &__caption {
+    @extend %section-caption;
+  }
+
+  &__container {
+    @include grid(445px, 50px 35px);
+
+    @include media-m {
+      @include grid(280px, 50px);
+    }
+  }
+
+  &__item {
+    display: flex;
+
+    @include media-m {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__image {
+    @include size(133px);
+    border-radius: 75px;
+    margin-right: 32px;
+    cursor: pointer;
+    transition: transform .6s ease-in-out;
+    box-shadow: 0 0 12px $color-simple-text;
+
+    @include media-m {
+      @include size(120px);
+      margin: 0 0 32px;
+    }
+
+    &:hover {
+      transform: scale(1.02);
+    }
+
+    &::after {
+      box-shadow: 0 0 15px $color-simple-text;
+      opacity: 0;
+      transition: opacity .6s ease-in-out;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__blockquote {
+    color: $color-simple-text;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 20px 0 40px;
+
+    @include media-m {
+      max-width: 280px;
+      padding: 0;
+    }
+  }
+
+  &__text {
+    @extend %simple-text;
+    font-size: 13px;
+    font-style: italic;
+    margin: 0 0 20px;
+
+    @include media-m {
+      margin: 0 0 10px;
+    }
+  }
+
+  &__author {
+    @extend %simple-text;
+    font-size: 14px;
+    font-style: normal;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  &__name {
+    color: $color-secondary;
+  }
+}
+

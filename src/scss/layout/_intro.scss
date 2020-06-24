@@ -1,0 +1,79 @@
+.intro {
+  margin-bottom: 30px;
+
+  &__title {
+    @extend %section-title;
+  }
+
+  &__caption {
+    @extend %section-caption;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border: 4px solid $color-secondary;
+    border-bottom: none;
+    padding: 25px 75px 0;
+
+    @include media-m {
+      padding: 25px 20px 0;
+    }
+
+    @include media-s {
+      padding: 25px 20px 0;
+    }
+
+    &::before {
+      @include border-style;
+      @include border-width(280px);
+      left: -4px;
+
+      @include media-m {
+        @include border-width(250px);
+      }
+
+      @include media-s {
+        @include border-width(220px);
+      }
+    }
+
+    &::after {
+      @include border-style;
+      @include border-width(280px);
+      right: -4px;
+
+      @include media-m {
+        @include border-width(250px);
+      }
+
+      @include media-s {
+        @include border-width(220px);
+      }
+    }
+  }
+
+  &__text {
+    @extend %simple-text;
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: center;
+    margin: 0 0 60px;
+
+    @include media-s {
+      font-size: 13px;
+    }
+  }
+
+  &__button {
+    @extend %button;
+    @include size(207px, 55px);
+    @include button-color($color-simple-text, $color-bright-accent, $color-bright-accent);
+    position: absolute;
+    bottom: -27.5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

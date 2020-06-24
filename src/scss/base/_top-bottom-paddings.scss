@@ -1,0 +1,14 @@
+.top-bottom-paddings {
+  padding-top: 40px;
+  padding-bottom: 60px;
+
+  @include media-l {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  @include media-m {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+}

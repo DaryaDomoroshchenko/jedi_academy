@@ -1,0 +1,14 @@
+%button {
+  font-family: $base-font-family;
+  font-size: 15px;
+  letter-spacing: .1em;
+  font-weight: normal;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  transition:
+    box-shadow .3s ease-out,
+    background-color .3s ease-out;
+}
+
+
