@@ -1,0 +1,31 @@
+.navigation {
+  display: flex;
+  flex-direction: row-reverse;
+  min-height: $nav-min-height-l;
+  padding-top: 50px;
+
+  @include media-m {
+    min-height: $nav-min-height-m;
+    padding-top: 30px;
+  }
+
+  @include media-s {
+    min-height: $nav-min-height-s;
+    padding-top: 20px;
+  }
+
+  &__icon {
+    @include size(27px, 21px);
+    filter: brightness(0) invert(100%);
+    transition: transform .5s ease;
+
+    &:hover {
+      transform: scale(1, 0.8);
+    }
+
+    &:active {
+      filter: none;
+      transform: scale(1, 0.8);
+    }
+  }
+}
