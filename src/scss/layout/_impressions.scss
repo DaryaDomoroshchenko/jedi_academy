@@ -1,12 +1,12 @@
 .impressions {
 
-  &__title {
+/*   &__title {
     @extend %section-title;
   }
 
   &__caption {
     @extend %section-caption;
-  }
+  } */
 
   &__container {
     @include grid(445px, 50px 35px);

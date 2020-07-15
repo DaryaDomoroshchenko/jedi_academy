@@ -1,12 +1,12 @@
 .digits {
 
-  &__title {
+/*   &__title {
     @extend %section-title;
   }
 
   &__caption {
     @extend %section-caption;
-  }
+  } */
 
   &__container {
     @include grid(250px, 60px);
