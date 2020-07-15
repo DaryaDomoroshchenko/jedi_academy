@@ -1,0 +1,19 @@
+include ../utils/mixins
+block variables
+
+doctype html
+html(lang='en')
+
+	head
+		meta(name='description', content='Главная страница Академии Джедаев')
+		meta(name='author', content='Дарья Доморощенко')
+		meta(name='keywords', content='академия джедаев, курсы джедаев')
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		link(rel='shortcut icon', href=require('../../images/darth_vader_favicon.png').default)
+		title #{title}
+
+body.page
+block content
+
+

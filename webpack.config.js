@@ -5,6 +5,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const isDev = process.env.NODE_ENV === 'development';
+const PATHS = {
+  src: path.join(__dirname, 'src'),
+  dist: path.join(__dirname, 'dist'),
+  assets: 'assets/'
+};
+const fs = require('fs');
+const PAGES_DIR = `${PATHS.src}/pug/pages/`;
+const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'));
 
 module.exports = {
   entry: { index: './src/index.js' },
@@ -49,6 +57,10 @@ module.exports = {
         ]
       },
       {
+        test: /\.pug$/i,
+        loader: 'pug-loader'
+      },
+      {
         test: /\.(eot|ttf|woff|woff2)$/,
         loader: 'file-loader?name=./fonts/[name].[ext]'
       },
@@ -82,11 +94,18 @@ module.exports = {
       canPrint: true
     }),
 
-    new HtmlWebpackPlugin({
+/*     new HtmlWebpackPlugin({
       inject: false,
-      template: './src/index.html',
-      filename: 'index.html'
-    }),
+      // template: './src/index.html',
+      // filename: 'index.html'
+      template: `${PAGES_DIR}/index.pug`,
+      filename: './index.html',
+    }), */
+
+    ...PAGES.map(page => new HtmlWebpackPlugin({
+      template: `${PAGES_DIR}/${page}`,
+      filename: `./${page.replace(/\.pug/,'.html')}`
+    })),
 
     new WebpackMd5Hash(),
 

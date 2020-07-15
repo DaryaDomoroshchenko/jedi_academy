@@ -1,0 +1,83 @@
+extends ../layout/main
+
+block variables
+  - var title = 'Jedi Academy - Main';
+
+block content
+
+  section.lead
+    nav.navigation.page-container
+      a.navigation__link(href='#')
+        img.navigation__icon(src=require('../../images/menu_icon.png').default, alt='Menu icon')
+    section.header.page-container
+      .header__wrap
+        h1.header__title Star Wars Jedi Academy
+        p.header__caption A long time ago in a galaxy far away...
+      a.header__link(href='#intro')
+        img.header__scroll-arrow(src=require('../../images/scroll_down.png').default, alt='Arrow')
+
+
+  section#intro.intro.page-container.top-bottom-paddings
+    .intro__container
+      +item('introduction from Master Yoda', 'Ready are you? What know you of ready?')
+      p.intro__text
+        | For eight hundred years have I trained Jedi. My own counsel will I keep on who is to be trained. A Jedi must have the deepest commitment, the most serious mind. This one a long time have I watched. All his life has he looked away… to the future, to the horizon. Never his mind on where he was. Hmm? What he was doing. Hmph. Adventure. Heh. Excitement. Heh. A Jedi craves not these things. You are reckless.
+      button.intro__button Read more
+
+  section.digits.page-container.top-bottom-paddings
+    +item('Our achievements in numbers', 'Smaller in number are we, but larger in mind')
+    .digits__container
+      .digits__item
+        img.digits__image(src=require('../../images/circle_1.png').default, alt='Circle')
+        .digits__wrap
+          span.digits__amount 70
+          span.digits__mark Jedi
+      .digits__item
+        img.digits__image(src=require('../../images/circle_2.png').default, alt='Circle')
+        .digits__wrap
+          span.digits__amount 400
+          span.digits__mark Droids
+      .digits__item
+        img.digits__image(src=require('../../images/circle_3.png').default, alt='Circle')
+        .digits__wrap
+          span.digits__amount 250
+          span.digits__mark Battles
+
+  section.impressions.page-container.top-bottom-paddings
+    +item('Meet our Mentors', 'Always two there are, no more, no less. A master and an apprentice')
+    .impressions__container
+      .impressions__item
+        img.impressions__image(src=require('../../images/Yoda.jpeg').default, alt='Master Yoda')
+        blockquote.impressions__blockquote
+          p.impressions__text “Always pass on what you have learned.”
+          cite.impressions__author
+            span.impressions__name Yoda
+            | , Jedi Academy
+      .impressions__item
+        img.impressions__image(src=require('../../images/MaceWindu.jpg').default, alt='Mace Windu')
+        blockquote.impressions__blockquote
+          p.impressions__text “We’re keepers of the peace, not soldiers.”
+          cite.impressions__author
+            span.impressions__name Mace Windu
+            | , Jedi Academy
+      .impressions__item
+        img.impressions__image(src=require('../../images/ObiWan.jpg').default, alt='Obi-Wan Kenobi')
+        blockquote.impressions__blockquote
+          p.impressions__text
+            | “The force is what gives a Jedi his power. It’s an energy field created by all living things.”
+          cite.impressions__author
+            span.impressions__name Obi-Wan Kenobi
+            | , Jedi Academy
+      .impressions__item
+        img.impressions__image(src=require('../../images/Skywalker.jpg').default, alt='Anakin Skywalker')
+        blockquote.impressions__blockquote
+          p.impressions__text “Sometimes we must let go of our pride, and do what is requested of us.”
+          cite.impressions__author
+            span.impressions__name A. Skywalker
+            | , Jedi Academy
+
+  section.path-choice.page-container.top-bottom-paddings
+    +item('Choose Your Path!', 'And may the Force be with you')
+    .path-choice__container
+      button.path-choice__button.path-choice__button_side_light Join the light side
+      button.path-choice__button.path-choice__button_side_dark Join the dark side

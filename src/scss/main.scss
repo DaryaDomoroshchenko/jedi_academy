@@ -7,6 +7,8 @@
 @import '../../node_modules/normalize.scss/normalize';
 @import './base/_page-container';
 @import './base/_top-bottom-paddings';
+@import './base/_page-title';
+@import './base/_page-caption';
 
 @import './layout/_page';
 @import './layout/_lead';
@@ -18,6 +20,6 @@
 @import './layout/_path-choice';
 
 @import './components/_button';
-@import './components/_section-title';
-@import './components/_section-caption';
+/* @import './components/_section-title';
+@import './components/_section-caption'; */
 @import './components/simple-text';
