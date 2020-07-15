@@ -8,13 +8,13 @@ block content
   section.lead
     nav.navigation.page-container
       a.navigation__link(href='#')
-        img.navigation__icon(src='./src/images/menu_icon.png', alt='Menu icon')
+        img.navigation__icon(src=require('../../images/menu_icon.png').default, alt='Menu icon')
     section.header.page-container
       .header__wrap
         h1.header__title Star Wars Jedi Academy
         p.header__caption A long time ago in a galaxy far away...
       a.header__link(href='#intro')
-        img.header__scroll-arrow(src='./src/images/scroll_down.png', alt='Arrow')
+        img.header__scroll-arrow(src=require('../../images/scroll_down.png').default, alt='Arrow')
 
 
   section#intro.intro.page-container.top-bottom-paddings
@@ -28,17 +28,17 @@ block content
     +item('Our achievements in numbers', 'Smaller in number are we, but larger in mind')
     .digits__container
       .digits__item
-        img.digits__image(src='./src/images/circle_1.png', alt='Circle')
+        img.digits__image(src=require('../../images/circle_1.png').default, alt='Circle')
         .digits__wrap
           span.digits__amount 70
           span.digits__mark Jedi
       .digits__item
-        img.digits__image(src='./src/images/circle_2.png', alt='Circle')
+        img.digits__image(src=require('../../images/circle_2.png').default, alt='Circle')
         .digits__wrap
           span.digits__amount 400
           span.digits__mark Droids
       .digits__item
-        img.digits__image(src='./src/images/circle_3.png', alt='Circle')
+        img.digits__image(src=require('../../images/circle_3.png').default, alt='Circle')
         .digits__wrap
           span.digits__amount 250
           span.digits__mark Battles
@@ -47,21 +47,21 @@ block content
     +item('Meet our Mentors', 'Always two there are, no more, no less. A master and an apprentice')
     .impressions__container
       .impressions__item
-        img.impressions__image(src='./src/images/Yoda.jpeg', alt='Master Yoda')
+        img.impressions__image(src=require('../../images/Yoda.jpeg').default, alt='Master Yoda')
         blockquote.impressions__blockquote
           p.impressions__text “Always pass on what you have learned.”
           cite.impressions__author
             span.impressions__name Yoda
             | , Jedi Academy
       .impressions__item
-        img.impressions__image(src='./src/images/MaceWindu.jpg', alt='Mace Windu')
+        img.impressions__image(src=require('../../images/MaceWindu.jpg').default, alt='Mace Windu')
         blockquote.impressions__blockquote
           p.impressions__text “We’re keepers of the peace, not soldiers.”
           cite.impressions__author
             span.impressions__name Mace Windu
             | , Jedi Academy
       .impressions__item
-        img.impressions__image(src='./src/images/ObiWan.jpg', alt='Obi-Wan Kenobi')
+        img.impressions__image(src=require('../../images/ObiWan.jpg').default, alt='Obi-Wan Kenobi')
         blockquote.impressions__blockquote
           p.impressions__text
             | “The force is what gives a Jedi his power. It’s an energy field created by all living things.”
@@ -69,7 +69,7 @@ block content
             span.impressions__name Obi-Wan Kenobi
             | , Jedi Academy
       .impressions__item
-        img.impressions__image(src='./src/images/Skywalker.jpg', alt='Anakin Skywalker')
+        img.impressions__image(src=require('../../images/Skywalker.jpg').default, alt='Anakin Skywalker')
         blockquote.impressions__blockquote
           p.impressions__text “Sometimes we must let go of our pride, and do what is requested of us.”
           cite.impressions__author
